@@ -1,0 +1,8 @@
+{
+    "serverUrl": "https://test.exswap.com",
+    "signUp": "/signup#personal",
+    "purchasePremium": "/purchase/premium",
+    "purchasePro": "/purchase/pro",
+    "accountInfo": "https://test.exswap.com/account#account-content/personal-info"
+}
+

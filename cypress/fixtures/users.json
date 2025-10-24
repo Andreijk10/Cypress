@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Create Free Account",
+    "email": "cypress.test1@exswap.com",
+    "password": "123!@#Cypress",
+    "rolesAfterUpgrade": [11]
+  }
+]

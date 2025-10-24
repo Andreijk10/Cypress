@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "valid": true,
+            "username": "andrei.test",
+            "password": "Test123!"
+        },
+
+        {
+            "valid": false,
+            "username": "wrong username",
+            "password": "Test123!"
+        }
+    ]
+}

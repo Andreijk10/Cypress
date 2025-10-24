@@ -1,0 +1,152 @@
+{
+    "export_xls": [
+        { 
+          "id": "1fc9d1e0f7e94e8991080257d43be9cd",
+          "name": "Mindmap - Cypress - Exports.xls",
+          "exportType": ["#horizontalOutlineContainer", "#horizontalTreeContainer", "#ganttChartDataContainer", "#verticalOutlineContainer"],
+          "type": "mindmap"
+        }, 
+        { 
+          "id": "6cffdc0462f848a5986586e1a63bd62b",
+          "name": "Outline - Cypress - Exports.xls",
+          "exportType": ["#horizontalOutlineContainer", "#horizontalTreeContainer", "#ganttChartDataContainer", "#verticalOutlineContainer"],
+          "type": "outline"
+        },
+        { 
+          "id": "c2b154113741402e8be32e389ea74575",
+          "name": "Gantt - Cypress - Exports.xls",
+          "exportType": ["#horizontalOutlineContainer", "#horizontalTreeContainer", "#ganttChartDataContainer", "#verticalOutlineContainer"],
+          "type": "gantt"
+        }
+    ],
+
+
+    "export_common_graphic": [
+        { 
+            "id": "1fc9d1e0f7e94e8991080257d43be9cd",
+            "name": ["Mindmap - Cypress - Exports.pdf", "Mindmap - Cypress - Exports.pptx", "Mindmap - Cypress - Exports.html", "Mindmap - Cypress - Exports.zip", "Mindmap - Cypress - Exports.png"],
+            "exportType": ["#pdfContainer", "#pptContainer", "#htmlContainer", "#zipContainer", "#pngContainer"]
+        }
+    ],
+
+
+    "export_common_text": [
+        { 
+            "id": "1fc9d1e0f7e94e8991080257d43be9cd",
+            "name": ["Mindmap - Cypress - Exports.md", "Mindmap - Cypress - Exports.docx", "Mindmap - Cypress - Exports.txt", "Mindmap - Cypress - Exports.opml", "Mindmap - Cypress - Exports.mpx", "Mindmap - Cypress - Exports.pdf", "Mindmap - Cypress - Exports.xml"],
+            "exportType": ["#markdownContainer","#docxContainer", "#txtContainer", "#opmlContainer", "#mpxContainer", "#pdfSlidesContainer", "#mpxmlContainer"]
+        }
+    ],
+
+
+    "export_formats": [
+        {
+            "id": "1fc9d1e0f7e94e8991080257d43be9cd",
+            "name": ["Mindmap - Cypress - Exports.mom", "Mindmap - Cypress - Exports.pmom", "Mindmap - Cypress - Exports.mm", "Mindmap - Cypress - Exports.mmap"],
+            "exportType": ["#momContainer","#pmomContainer", "#mmContainer", "#mmapContainer"],
+            "type": "mindmap"
+        },
+        {
+            "id": "6cffdc0462f848a5986586e1a63bd62b",
+            "name": ["Outline - Cypress - Exports.mom", "Outline - Cypress - Exports.pmom", "Outline - Cypress - Exports.mm", "Outline - Cypress - Exports.mmap"],
+            "exportType": ["#momContainer","#pmomContainer", "#mmContainer", "#mmapContainer"],
+            "type": "outline"
+        },
+        {
+            "id": "c2b154113741402e8be32e389ea74575",
+            "name": ["Gantt - Cypress - Exports.mom", "Gantt - Cypress - Exports.pmom", "Gantt - Cypress - Exports.mm", "Gantt - Cypress - Exports.mmap"],
+            "exportType": ["#momContainer","#pmomContainer", "#mmContainer", "#mmapContainer"],
+            "type": "gantt"
+        }
+    ],
+
+
+    "export_presenter": [
+        {
+            "id": "1fc9d1e0f7e94e8991080257d43be9cd",
+            "name": ["Mindmap - Cypress - Exports.pptx", "Mindmap - Cypress - Exports.pdf", "Mindmap - Cypress - Exports.zip"],
+            "exportType": ["#downloadSlidesAsPPT", "#downloadSlidesAsPDF", "#downloadSlidesAsZIP"]
+        }
+    ],
+
+
+    "exports_viewer": [
+        {
+            "id": "-1fc9d1e0f7e94e8991080257d43be9cd",
+            "name": ["Mindmap - Cypress - Exports.pdf", "Mindmap - Cypress - Exports.png"],
+            "exportType": ["[data-type=\"pdf\"]", "[data-type=\"png\"]"],
+            "type": "mindmap"
+        },
+        {
+            "id": "-6cffdc0462f848a5986586e1a63bd62b",
+            "name": ["Outline - Cypress - Exports.pdf", "Outline - Cypress - Exports.png"],
+            "exportType": ["[data-type=\"pdf\"]", "[data-type=\"png\"]"],
+            "type": "outline"
+        },
+        {
+            "id": "-c2b154113741402e8be32e389ea74575",
+            "name": ["Gantt - Cypress - Exports.pdf", "Gantt - Cypress - Exports.png"],
+            "exportType": ["[data-type=\"pdf\"]", "[data-type=\"png\"]"],
+            "type": "gantt"
+        }
+    ],
+
+
+    "printer": [
+        { 
+            "id": "1fc9d1e0f7e94e8991080257d43be9cd", 
+            "name": "Mindmap - Cypress - Exports.pdf",
+            "type": "mindmap"
+        },
+        { 
+            "id": "6cffdc0462f848a5986586e1a63bd62b", 
+            "name": "Outline - Cypress - Exports.pdf",
+            "type": "outline"
+        },
+        { 
+            "id": "c2b154113741402e8be32e389ea74575", 
+            "name": "Gantt - Cypress - Exports.pdf", 
+            "type": "gantt"
+        }
+    ],
+
+
+    "printer_viewer": [
+        { 
+            "id": "-1fc9d1e0f7e94e8991080257d43be9cd", 
+            "name": "Mindmap - Cypress - Exports.pdf",
+            "type": "mindmap"
+        },
+        { 
+            "id": "-6cffdc0462f848a5986586e1a63bd62b", 
+            "name": "Outline - Cypress - Exports.pdf",
+            "type": "outline"
+        },
+        { 
+            "id": "-c2b154113741402e8be32e389ea74575", 
+            "name": "Gantt - Cypress - Exports.pdf", 
+            "type": "gantt"
+        }
+    ],
+        
+    "export_common_outline": [
+        { 
+            "id": "6cffdc0462f848a5986586e1a63bd62b",
+            "name": ["Outline - Cypress - Exports.pdf", "Outline - Cypress - Exports.html", "Outline - Cypress - Exports.png", "Outline - Cypress - Exports.md", "Outline - Cypress - Exports.docx", "Outline - Cypress - Exports.txt", "Outline - Cypress - Exports.opml", "Outline - Cypress - Exports.mpx", "Outline - Cypress - Exports.xml"],
+            "exportType": ["#pdfContainer", "#htmlContainer", "#pngContainer", "#markdownContainer","#docxContainer", "#txtContainer", "#opmlContainer", "#mpxContainer", "#mpxmlContainer"],
+            "type": "outline"
+        }
+    ],
+
+
+    "export_common_gantt": [
+        { 
+            "id": "c2b154113741402e8be32e389ea74575",
+            "name": ["Gantt - Cypress - Exports.pdf", "Gantt - Cypress - Exports.html", "Gantt - Cypress - Exports.png", "Gantt - Cypress - Exports.md", "Gantt - Cypress - Exports.docx", "Gantt - Cypress - Exports.txt", "Gantt - Cypress - Exports.opml", "Gantt - Cypress - Exports.mpx", "Gantt - Cypress - Exports.xml"],
+            "exportType": ["#pdfContainer", "#htmlContainer", "#pngContainer", "#markdownContainer","#docxContainer", "#txtContainer", "#opmlContainer", "#mpxContainer", "#mpxmlContainer"],
+            "type": "gantt"
+        }
+    ]
+}
+  
+

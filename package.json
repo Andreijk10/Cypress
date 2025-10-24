@@ -1,0 +1,33 @@
+{
+  "name": "cypress-course",
+  "version": "1.0.0",
+  "description": "Learning about Cypress.Io from udemy",
+  "main": "index.js",
+  "scripts": {
+    "runner": "cypress open --e2e --browser chrome --config baseURL=http://uitestingplayground.com --env firstEnvironmentVariable=Hello_From_Package_JSON"
+  },
+  "keywords": [
+    "cypress",
+    "javascript",
+    "typescript",
+    "testing"
+  ],
+  "author": "Andrei Iordache",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.0",
+    "@cypress/xpath": "^2.0.3",
+    "@testing-library/cypress": "^10.0.3",
+    "cy-verify-downloads": "^0.2.6",
+    "cypress": "^14.2.1",
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.14.0",
+    "cypress-social-logins": "^1.14.2",
+    "cypress-xpath": "^2.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "puppeteer": "^24.10.1"
+  }
+}
