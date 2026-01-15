@@ -14,6 +14,8 @@ Developed and executed automated test suites for the Mindomo web application, co
 
 -Purchase subscription flow
 
+-Features check from topic`s context menu
+
 Structure & Resources
 
 -Organized classes for better code reusability and test maintenance
