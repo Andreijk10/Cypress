@@ -1,6 +1,3 @@
-import 'cypress-plugin-stripe-elements';
-import 'cypress-cdp';
-import 'cypress-iframe';
 import 'cypress-real-events';
 
 

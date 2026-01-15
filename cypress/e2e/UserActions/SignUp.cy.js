@@ -6,11 +6,11 @@ describe('SignUp', () => {
     let config;
     let freeUsers;
 
-
     beforeEach(() => {
         cy.fixture('config').then((c) => { config = c; });
         cy.fixture('freeUsers').then((fu) => { freeUsers = fu; });
     });
+    
     it('SignUp', () => {
         freeUsers.forEach(user => {
             cy.visit(config.serverUrl);

@@ -20,7 +20,6 @@
         }
     ],
 
-
     "export_common_graphic": [
         { 
             "id": "1fc9d1e0f7e94e8991080257d43be9cd",
@@ -29,7 +28,6 @@
         }
     ],
 
-
     "export_common_text": [
         { 
             "id": "1fc9d1e0f7e94e8991080257d43be9cd",
@@ -37,7 +35,6 @@
             "exportType": ["#markdownContainer","#docxContainer", "#txtContainer", "#opmlContainer", "#mpxContainer", "#pdfSlidesContainer", "#mpxmlContainer"]
         }
     ],
-
 
     "export_formats": [
         {
@@ -60,7 +57,6 @@
         }
     ],
 
-
     "export_presenter": [
         {
             "id": "1fc9d1e0f7e94e8991080257d43be9cd",
@@ -68,7 +64,6 @@
             "exportType": ["#downloadSlidesAsPPT", "#downloadSlidesAsPDF", "#downloadSlidesAsZIP"]
         }
     ],
-
 
     "exports_viewer": [
         {
@@ -91,7 +86,6 @@
         }
     ],
 
-
     "printer": [
         { 
             "id": "1fc9d1e0f7e94e8991080257d43be9cd", 
@@ -109,7 +103,6 @@
             "type": "gantt"
         }
     ],
-
 
     "printer_viewer": [
         { 
@@ -138,7 +131,6 @@
         }
     ],
 
-
     "export_common_gantt": [
         { 
             "id": "c2b154113741402e8be32e389ea74575",
@@ -146,7 +138,22 @@
             "exportType": ["#pdfContainer", "#htmlContainer", "#pngContainer", "#markdownContainer","#docxContainer", "#txtContainer", "#opmlContainer", "#mpxContainer", "#mpxmlContainer"],
             "type": "gantt"
         }
+    ],
+
+    "feature_check": [
+        { 
+            "id": "8d373b8cdb054ef4baecd905359cedc9",
+            "type": "mindmap"
+        }
+    ],
+    
+    "premium_check":[
+        {
+            "id": "84099156bfc44e51829d8648c3d1f4ff", 
+            "type": "mindmap"
+        }
     ]
+
 }
   
 
