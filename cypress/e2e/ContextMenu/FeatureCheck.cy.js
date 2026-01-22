@@ -1,4 +1,5 @@
 import 'cypress-real-events';
+
 const LoginExecutor = require('../../support/executors/LoginExecutor.js');
 
 describe('FeatureCheck', () => {
@@ -113,8 +114,51 @@ describe('FeatureCheck', () => {
             cy.get('[data-submenu="topic-fill-style"] > .menu-item > .text').click({force: true});
             cy.get('[data-tag="23"] > span').click({force: true});
 
+            // Icons
+            cy.get('#n0-2 > .md-n-shape').click({force: true});
+            cy.get('#symbol').click({force: true});
+            cy.get('#symbolsMenu > .animated-container > .input-cont-rel').click({force: true}).type("muscle");
+            cy.wait(3000);
+            cy.get('#_3058 > .icon').click();
+            cy.get('#symbolsMenu svg[viewBox="0 0 18.08 18.08"]').click();
+            cy.get('#regional').click();
+            cy.get('#_3488 span.icon').click();
+            cy.get('#people span.icon').click();
+            cy.get('#_2923 span.icon').click();
+            cy.get('#activity').click();
+            cy.get('#_2335 span.icon').click();
+            cy.get('#objects').click();
+            cy.get('#_2449 span.icon').click();
+            // Remove all topic icons
+            //cy.get('#symbolsMenu span.text').click();
+
+            // Multimedia
+            cy.get('#multimedia svg').click();
+            cy.get('#insertImageInputTopic').click().type("https://media.istockphoto.com/id/814423752/ro/fotografie/ochi-de-model-cu-arta-colorata-make-up-prim-plan.jpg?s=1024x1024&w=is&k=20&c=Pa3Q7qu3O3-IIBUpnPkf0jRJCaPEzJ3fQbVcBg2F03I={enter}");
+            cy.wait(5000);
+            cy.get('#imageMenu button[aria-label="Attach Uploaded"]').click({force: true});
+            cy.get('#imageMenu button:nth-child(2) img').click();
+            cy.wait(3000);  
+            cy.get('#imageMenu div[data-view="multimedia-image"] button.btn-bord').click({force: true});
+            cy.get('#imageMenu svg[viewBox="0 0 20.83 17.16"]').click(); 
+            cy.get('#imageMenu button[data-multimedia-url="../pictures/thumbnails/gallery/business/announcement.png"] img').click();
+            cy.wait(3000);
+            cy.get('#imageMenu div[data-view="multimedia-image"] button.btn-bord').click({force: true});
+            cy.get('#imageMenu span.icon-search-large svg').click();
+            cy.wait(3000);
+            cy.get('#searchImageInputTopic').type('Mindomo{enter}');
+            cy.wait(3000);
+            cy.get('#imageMenu button[data-multimedia-url="https://play-lh.googleusercontent.com/a0fts9JgssmNY96xHLTebExU2qwBiDmwYybheAf8u-AQ2oFLsMmV_kvZzy1joMif5g"] img').click();
+            cy.wait(3000);
+            cy.get('#imageMenu div[data-view="multimedia-image"] button.btn-bord').click({force: true});
+
+
            });
         });
     });
 });
+
+
+
+
 
