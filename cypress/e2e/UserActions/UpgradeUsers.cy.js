@@ -1,6 +1,6 @@
-const SignUpExecutor = require('../../support/SignUpExecutor');
-const EraseAccountExecutor = require("../../support/EraseAccountExecutor");
-const PurchaseExecutor = require("../../support/PurchaseExecutor");
+const SignUpExecutor = require('../../support/executors/SignUpExecutor');
+const EraseAccountExecutor = require("../../support/executors/EraseAccountExecutor");
+const PurchaseExecutor = require("../../support/executors/PurchaseExecutor");
 
 describe("UpgradeUsers", () => {
     let config;

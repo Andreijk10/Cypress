@@ -1,5 +1,5 @@
-const SignUpExecutor = require('../../support/SignUpExecutor');
-const EraseAccountExecutor = require('../../support/EraseAccountExecutor');
+const SignUpExecutor = require('../../support/executors/SignUpExecutor');
+const EraseAccountExecutor = require('../../support/executors/EraseAccountExecutor');
 
 
 describe('SignUp', () => {

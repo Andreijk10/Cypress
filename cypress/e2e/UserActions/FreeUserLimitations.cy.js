@@ -1,5 +1,5 @@
-const LoginExecutor = require('../../support/LoginExecutor.js');
-const EraseAccountExecutor = require('../../support/EraseAccountExecutor');
+const LoginExecutor = require('../../support/executors/LoginExecutor.js');
+const EraseAccountExecutor = require('../../support/executors/EraseAccountExecutor');
 
 
 describe('FreeUserLimitations', () => {

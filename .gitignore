@@ -1,1 +1,4 @@
 node_modules
+cypress/fixtures/users.json
+cypress/fixtures/freeUsers.json
+cypress/fixtures/freeUser.json

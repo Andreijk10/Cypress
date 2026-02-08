@@ -1,4 +1,4 @@
-const LoginExecutor = require('../../support/LoginExecutor.js');
+const LoginExecutor = require('../../support/executors/LoginExecutor.js');
 
 
 describe('Prints', () => {
