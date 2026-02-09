@@ -43,7 +43,7 @@ describe('FeatureCheck', () => {
 
             // Insert Summary
             cy.get('#n0-3 > .md-n-shape > .md-n-text').click({force: true});
-            cy.get('#insert').click();
+            cy.get('#insert').click({force: true});
             cy.get('#insertSummary > .text').click();
 
             // Insert Boundary
@@ -59,25 +59,25 @@ describe('FeatureCheck', () => {
             cy.get('#n0-2-0 > .md-n-shape > .md-n-text').click();
             
             // Insert Math Equation
-            cy.get('#n0-3 > .md-n-shape > .md-n-text').click();
-            cy.get('#insert').click({force: true}).should('be.visible');
+            cy.get('#n0-3 > .md-n-shape > .md-n-text').click({force: true});
+            cy.get('#insert').click({force: true});
             cy.get('#insertFormula > .text').click({force: true});
             cy.get('#n0-2-0 > .md-n-shape > .md-n-text').click();  
 
             // Insert Task
-            cy.get('#n0-3 > .md-n-shape > .md-n-text').click();
+            cy.get('#n0-3 > .md-n-shape > .md-n-text').click({force: true});
             cy.get('#insert').click({force: true}).should('be.visible');
             cy.get('#subtopicAsTask > .text').click({force: true});
             cy.get('#n0-2-0 > .md-n-shape > .md-n-text').click();
 
             // Insert Floating Topic
-            cy.get('#n0-3 > .md-n-shape > .md-n-text').click();
+            cy.get('#n0-3 > .md-n-shape > .md-n-text').click({force: true});
             cy.get('#insert').click({force: true}).should('be.visible');
             cy.get('#insertMenu > .item-view > .animated-container > #floating > .text').click({force: true});
             cy.get('#n0-2-0 > .md-n-shape > .md-n-text').click();
 
             // Insert Duplicate Topic
-            cy.get('#n0-3 > .md-n-shape > .md-n-text').click();
+            cy.get('#n0-3 > .md-n-shape > .md-n-text').click({force: true});
             cy.get('#insert').click({force: true}).should('be.visible');
             cy.get('#duplicate > .text').click({force: true});
             
@@ -133,9 +133,9 @@ describe('FeatureCheck', () => {
             //cy.get('#symbolsMenu span.text').click();
 
             // Multimedia
+            // Image
             cy.get('#multimedia svg').click();
             cy.get('#insertImageInputTopic').click().type("https://media.istockphoto.com/id/814423752/ro/fotografie/ochi-de-model-cu-arta-colorata-make-up-prim-plan.jpg?s=1024x1024&w=is&k=20&c=Pa3Q7qu3O3-IIBUpnPkf0jRJCaPEzJ3fQbVcBg2F03I={enter}");
-            cy.wait(5000);
             cy.get('#imageMenu button[aria-label="Attach Uploaded"]').click({force: true});
             cy.get('#imageMenu button:nth-child(2) img').click();
             cy.wait(3000);  
@@ -145,18 +145,46 @@ describe('FeatureCheck', () => {
             cy.wait(3000);
             cy.get('#imageMenu div[data-view="multimedia-image"] button.btn-bord').click({force: true});
             cy.get('#imageMenu span.icon-search-large svg').click();
-            cy.wait(3000);
             cy.get('#searchImageInputTopic').type('Mindomo{enter}');
-            cy.wait(3000);
             cy.get('#imageMenu button[data-multimedia-url="https://play-lh.googleusercontent.com/a0fts9JgssmNY96xHLTebExU2qwBiDmwYybheAf8u-AQ2oFLsMmV_kvZzy1joMif5g"] img').click();
-            cy.wait(3000);
             cy.get('#imageMenu div[data-view="multimedia-image"] button.btn-bord').click({force: true});
 
+            // Video
+            cy.get('.btns-cont-ht-33 > [data-trigger-view="video"]').click();
+            cy.get('.btns-cont > [data-trigger-view="video"]').click();
+            cy.get('#insertVideoInput').click().type("https://www.youtube.com/watch?v=oXKnrDLg2KA{enter}");
+            cy.get('#videoMenu button[aria-label="Attach Uploaded"] span.icon-outer-cont').click();
+            cy.get('[data-view="multimedia-video"] > .animated-container > .search-item-result-container > .nav-menu > .nav-item > .multimedia-img-container').click();
+            cy.wait(3000);
+            cy.get('#videoMenu div[data-view="multimedia-video"] button.btn-bord span.icon-svg svg').click();
+            cy.get('.nav-menu > [aria-label="Search Youtube Video..."]').click();
+            cy.get('#youtubeVideoInput').click().type("Mindomo{enter}");
+            cy.wait(3000);
+            cy.get('[data-multimedia-url="https://www.youtube.com/watch?v=4M2sxZPVTrg"]').click();
+            cy.get('[data-view="youtube"] > .animated-container > .flex-5-gap > .btn-bord').click();
+
+
+            // Record
+            cy.get('.btns-cont-ht-33 > [data-trigger-view="audio"]').click()
+            cy.get('#insertAudioInput').click().type("http://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3{enter}");
+            cy.get('[data-view="audio"] > .animated-container > .mar-10-t > .nav-menu > .btn-change-multimedia').click()
+            cy.get('[data-multimedia-url="aud://07a8c63b2edd4291873e99eae95c2474"] > .multimedia-img-container').click()
+            cy.get('[data-view="multimedia-audio"] > .animated-container > .flex-5-gap > .btn-bord').click();
+            cy.get('#recordBtn').click();
+            cy.get('#startRecording').click();
+            cy.wait(4000);
+            cy.get('#stopRecording').click();
+            cy.get("#saveBtn").click();
+
+            //Links Attachments
+            cy.get('#hyperlink').click();
+            cy.get('#hyperlinkInput0').click().type("https://www.mindomo.com{enter}");
 
            });
         });
     });
 });
+
 
 
 
