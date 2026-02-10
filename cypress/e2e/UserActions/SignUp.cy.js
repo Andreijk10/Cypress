@@ -8,7 +8,7 @@ describe('SignUp', () => {
 
     beforeEach(() => {
         cy.fixture('config').then((c) => { config = c; });
-        cy.fixture('freeUsers').then((fu) => { freeUsers = fu; });
+        cy.fixture('cacat').then((fu) => { freeUsers = fu; });
     });
     
     it('SignUp', () => {
