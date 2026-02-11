@@ -52,7 +52,7 @@ describe('Exports from mega menu', () => {
     });
 
 
-    it("MindmapCommonGraphicExports", () =>{
+    it.only("MindmapCommonGraphicExports", () =>{
         users.forEach((user) => {
              //Login
             LoginExecutor.login(config, user);
